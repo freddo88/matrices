@@ -1,13 +1,13 @@
 def crear_tablero_ajedrez(tamano=8):
-    tablero = []
+    tablero_local = []
     for fila in range(tamano):
-        tablero.append([])
+        tablero_local.append([])
         for columna in range(tamano):
             if (fila + columna) % 2 == 0:
-                tablero[fila].append('⬜')  # Blanco
+                tablero_local[fila].append('⬜')  # Blanco
             else:
-                tablero[fila].append('⬛')  # Negro
-    return tablero
+                tablero_local[fila].append('⬛')  # Negro
+    return tablero_local
 
 
 def imprimir_tablero(tablero):
