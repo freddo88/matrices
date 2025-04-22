@@ -10,11 +10,11 @@ def crear_tablero_ajedrez(tamano=8):
     return tablero_local
 
 
-def imprimir_tablero(tablero):
-    for fila in tablero:
+def imprimir_tablero(tablero_a_imprimir):
+    for fila in tablero_a_imprimir:
         print(" ".join(fila))
 
 
 if __name__ == "__main__":
     tablero = crear_tablero_ajedrez()
-    imprimir_tablero(tablero)
+    imprimir_tablero(tablero_a_imprimir=tablero)
